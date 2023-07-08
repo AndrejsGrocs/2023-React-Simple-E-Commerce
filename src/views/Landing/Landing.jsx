@@ -1,4 +1,6 @@
 import React from "react";
+import {Products} from "../../products"
+import {Product1} from '../Product/Product'
 
 
 export default function Landing() {
@@ -7,9 +9,20 @@ export default function Landing() {
         
           <div>
             <div className='landing-body'>
-            <h1 className='lp-h1'>The main page of your project</h1>
+            <h1 className='lp-h1'>React Shop</h1>
            
         
+          </div>
+
+          <div className="products-section">
+            <h1 className="products-h1">Products</h1>
+            <div>
+            {" "}
+              {Products.map((product)=> 
+
+              <Product1 data={product}/>)}
+            </div>
+
           </div>
         
           </div>
