@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logoimg from '../../img/react_logo.png'
 import instalogo from '../../img/instagram-logo.png'
+import {ShoppingCart} from 'phosphor-react'
 
 
 export default function Navbar() {
@@ -19,9 +20,8 @@ export default function Navbar() {
             <>
             
             <li><Link to='/' activeclassname='active' className='nav-link'> Home</Link></li>
-            <li><Link to='/page1' activeclassname='active' className='nav-link'> Page 1</Link></li>
-            {/* <li><Link to='/page2' activeclassname='active' className='nav-link'> Page 2</Link></li>
-            <li><Link to='/page3' activeclassname='active' className='nav-link'> Page 3</Link></li> */}
+            <li><Link to='/shopping_cart' activeclassname='active' className='nav-link'><ShoppingCart size={32}/></Link></li>
+        
            
         
           
