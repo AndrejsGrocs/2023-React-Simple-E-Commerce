@@ -21,8 +21,14 @@
 }
 
 .products-section{
+    position: relative;
+    top: 20vh;
+    width: 70%;
+
+    height: 200vh;
+    gap: 30px;
     background-color: #4dcebc;
-    height: 100vh;
+  
 
 }
 

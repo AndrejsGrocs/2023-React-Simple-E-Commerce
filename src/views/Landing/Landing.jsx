@@ -10,22 +10,23 @@ export default function Landing() {
           <div>
             <div className='landing-body'>
             <h1 className='lp-h1'>React Shop</h1>
-           
-        
-          </div>
-
-          <div className="products-section">
-            <h1 className="products-h1">Products</h1>
-            <div>
-            {" "}
+            <div className="products-section">
+          {" "}
               {Products.map((product)=> 
 
               <Product1 data={product}/>)}
+            <div>
+      
             </div>
 
           </div>
         
           </div>
+           
+        
+          </div>
+
+      
 
   
   
