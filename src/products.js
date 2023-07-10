@@ -1,7 +1,7 @@
 import product1 from './img/headphones.jpg'
 
 
-export const Products = [
+export const PRODUCTS = [
     {
        id:1,
        productName: 'Headphones',
