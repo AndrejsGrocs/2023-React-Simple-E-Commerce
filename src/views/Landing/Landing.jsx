@@ -1,5 +1,5 @@
 import React from "react";
-import {Products} from "../../products"
+import {PRODUCTS} from "../../products"
 import {Product1} from '../Product/Product'
 
 
@@ -12,7 +12,7 @@ export default function Landing() {
             <h1 className='lp-h1'>React Shop</h1>
             <div className="products-section">
           {" "}
-              {Products.map((product)=> 
+              {PRODUCTS.map((product)=> 
 
               <Product1 data={product}/>)}
             <div>
