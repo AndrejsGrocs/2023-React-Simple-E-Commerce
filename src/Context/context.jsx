@@ -44,6 +44,7 @@ export const ShopContextProvider = (props) => {
 
   };
 
+  //! showing cart items array in console.
   console.log(cartItems)
 
   return (

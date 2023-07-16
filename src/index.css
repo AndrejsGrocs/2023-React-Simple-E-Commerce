@@ -3,6 +3,7 @@
 @import url('../src/views/Landing/landing.scss');
 @import url('../src/views/ShoppingCart/shoppingcart.scss');
 @import url('../src/views/Product/product.scss');
+@import url('../src/views/ShoppingCart/cartitem.scss');
 
 
 
