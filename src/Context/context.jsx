@@ -14,11 +14,15 @@ const getDefaultCart = () => {
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
+
+  //Function generates the total amount of items and total price in cart
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
+        //getting the  itemInfo here to get the price
         let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+        // amount of product multiply to price
         totalAmount += cartItems[item] * itemInfo.price;
       }
     }
@@ -33,12 +37,18 @@ export const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
+  //  Function to change amount of items in input field in Shopping Cart page
+  const updateCartItemCount = (newAmount, itemId) =>{
+    setCartItems((prev)=>({...prev, [itemId]: newAmount }))
+
+  }
+
 
 
   const contextValue = {
     cartItems,
     addToCart,
-
+    updateCartItemCount,
     removeFromCart,
     getTotalCartAmount,
 
