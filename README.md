@@ -6,12 +6,6 @@
 
 
 
-
-
-
-
-
-
 ```
 Project in progress.
 Now is the design phase.
