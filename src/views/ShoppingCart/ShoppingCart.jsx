@@ -12,7 +12,7 @@ export default function Page1() {
   return (
     <>
       <div className="page-1-body">
-        <h1 className="p1-h1">Shopping Cart</h1>
+        <h1 className="p1-h1">Shopping Cart.</h1>
 
         <div>
           <div className="cart-items">
