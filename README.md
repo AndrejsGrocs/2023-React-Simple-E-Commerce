@@ -6,16 +6,14 @@
 
 
 
-
-
-
-
-
-
 ```
 Project in progress.
-Now working on logic.
-Design and responsiveness are coming soon
+Now is the design phase.
+Responsiveness is coming soon.
+
+The project is a template for the users to get this logic and put it inside your e-commerce app,
+to get the shopping cart functionality with the possibility to add/remove items and also to 
+see the total price of the cart.
 
 ```
 
