@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-200);
+    height: 39vh;
+    width: 31%;
+    border-radius: 30px;
+  }
+  

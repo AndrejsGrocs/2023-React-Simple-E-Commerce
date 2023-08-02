@@ -1,20 +1,28 @@
 .product{
+    position: relative;
+    top: 10vh;
     display: flex;
-    justify-content: center;
-
-    background-color: #bc44b8;
-    border: 1px solid red;
-    width: 500px;
+    flex-direction: column;
+    background-color: var(--color-gray-200);
+    height: 39vh;
+    width: 31%;
+    border-radius: 30px;
   
   
 }
 
 .product-img{
-    width: 100px;
+    position: relative;
+    top: 3vh;
+    margin: 0 auto;
+    width: 7vw;
+    border-radius: 30px;
 }
 
 .product-description{
     position: relative;
-    top: 10vh;
+    top: 5vh;
+    text-align: center;
+    margin: 0 auto;
 }
 
