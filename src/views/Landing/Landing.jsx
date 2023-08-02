@@ -9,9 +9,9 @@ export default function Landing() {
         
           <div>
             <div className='landing-body'>
-            <h1 className='lp-h1'>React Shop</h1>
+            <h1 className='lp-h1'>STUDIO EQUIPMENT SHOP</h1>
             </div>
-            <div className="products-section">
+            <div className="cards-container">
          
               {PRODUCTS.map((product)=> 
 

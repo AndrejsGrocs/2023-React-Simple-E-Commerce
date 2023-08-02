@@ -22,10 +22,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-red-example);
+}
+
+:root{
+    /* Colors */
+    --color-gray-100: #707070;
+    --color-gray-200: #496773;
+    --color-gray-300: #373434;
+    --color-tan-100: #ce9454;
+    --color-tan-200: #c4965e;
+    --color-red-example: #dd435d
+
+    
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
 
