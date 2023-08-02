@@ -15,14 +15,82 @@
     position: relative;
     top: 3vh;
     margin: 0 auto;
-    width: 7vw;
+    width: 9vw;
     border-radius: 30px;
 }
 
 .product-description{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
     position: relative;
     top: 5vh;
     text-align: center;
     margin: 0 auto;
+}
+
+
+
+
+.add-to-cart-button {
+    position: relative;
+    top: 1vh;
+  appearance: button;
+  background-color: var(--color-red-example);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid var(--color-red-example);
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 500;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.add-to-cart-button:focus:not(:focus-visible),
+.add-to-cart-button:focus {
+  outline: 0;
+}
+
+.add-to-cart-button:hover {
+  background-color: #e84f69;
+  border-color: #e84f69;
+}
+
+.add-to-cart-button:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.add-to-cart-button:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.add-to-cart-button:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.add-to-cart-button:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
 }
 
