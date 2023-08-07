@@ -5,11 +5,28 @@
   }
 
   .cart-item {
+    position: relative;
+    top: 10vh;
     display: flex;
     flex-direction: column;
     background-color: var(--color-gray-200);
-    height: 39vh;
-    width: 31%;
+    height: 300px;
+    width: 200px;
     border-radius: 30px;
+    
+  }
+
+  .description{
+    position: relative;
+    top: 5vh;
+    text-align: center;
+  }
+
+
+
+  .c_i_input{
+    width: 50px;
+  
+    text-align: center;
   }
   
