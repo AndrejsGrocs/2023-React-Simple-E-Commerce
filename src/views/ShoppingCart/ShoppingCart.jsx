@@ -11,11 +11,11 @@ export default function Page1() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="page-1-body">
-        <h1 className="p1-h1">Shopping Cart</h1>
+      <div className="shopping-cart-body">
+        <h1 className="sc-h1">Shopping Cart</h1>
 
         <div>
-          <div className="cart-items">
+          <div className="cart-items-container">
             {/* //! Products list
             //! Displaying products only are added to cart */}
             {PRODUCTS.map((product) => {
@@ -26,17 +26,25 @@ export default function Page1() {
                 return <CartItem data={product} />;
               }
             })}
+
           </div>
-          {/* //Here is the logic if total amount >0 and exists he will show the data or show the info that 'Your cart is empty'*/}
+          
+          <div className="checkout-container">
+            
+                   {/* //Here is the logic if total amount >0 and exists he will show the data or show the info that 'Your cart is empty'*/}
           {totalAmount > 0 ? (
             <div className="checkout">
-              <p>Subtotal: EUR{totalAmount}</p>
-              <button onClick={() => navigate("/")}>Continue Shopping</button>
-              <button>Checkout</button>
+              <p className="subtotal-text">Subtotal:  {totalAmount} EUR</p>
+              <div className="button-container">
+              <button className="checkout-button" onClick={() => navigate("/")}>Continue Shopping</button>
+              <button className="checkout-button">Checkout</button>
+              </div>
             </div>
           ) : (
-            <p>Your cart is empty</p>
+            <p className="empty-cart-text">Your cart is empty</p>
           )}
+          </div>
+   
         </div>
       </div>
     </>

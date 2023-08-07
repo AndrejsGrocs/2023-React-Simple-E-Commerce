@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logoimg from '../../img/react_logo.png'
-import instalogo from '../../img/instagram-logo.png'
+import emailicon from '../../img/email_icon.png'
+import githubicon from '../../img/github_icon.png'
+import linkedinicon from '../../img/linkedin_icon.png'
 import {ShoppingCart} from 'phosphor-react'
 
 
@@ -19,7 +21,7 @@ export default function Navbar() {
         {( 
             <>
             
-            <li><Link to='/' activeclassname='active' className='nav-link'> Home</Link></li>
+            <li><Link to='/' activeclassname='active' className='nav-link'> MAIN</Link></li>
             <li><Link to='/shopping_cart' activeclassname='active' className='nav-link'><ShoppingCart size={32}/></Link></li>
         
            
@@ -31,9 +33,9 @@ export default function Navbar() {
         </ul>
 
         <div className='sm-section'>
-           <a className='sm-icon' href="/" >{<img className='sm-logo-img' src={instalogo} alt='logo'></img>}</a> 
-           <a className='sm-icon' href="/" >{<img className='sm-logo-img' src={instalogo} alt='logo'></img>}</a>
-           <a className='sm-icon' href="/" >{<img className='sm-logo-img' src={instalogo} alt='logo'></img>}</a> 
+           <a className='sm-icon' target='_blank' href="mailto:andrey.detochkin@gmail.com" >{<img className='sm-logo-img'  src={emailicon} alt='logo' target="_blank" ></img>}</a> 
+           <a className='sm-icon' target='_blank' href="https://github.com/AndrejsGrocs" >{<img className='sm-logo-img' src={githubicon} alt='logo' target="_blank" ></img>}</a>
+           <a className='sm-icon' target='_blank' href="https://www.linkedin.com/in/andrejs-grocs-andrey-detochkin-ab2106141" >{<img className='sm-logo-img' src={linkedinicon} alt='logo'></img>}</a> 
            {/* <h3>Social Media Section</h3>  */}
         </div>
 
