@@ -5,16 +5,23 @@
 }
 
 .landing-body {
-  background-color: var(--color-red-example);
+  background-color: var(--color-pink-example);
   height: 20vh;
   display: flex;
-  justify-content: row;
+
   justify-content: center;
   margin-top: 100px;
 }
 
+.cards-section{
+  position: relative;
+  height: 180vh;
+  background-color: var(--color-pink-example);
+}
+
 .lp-h1 {
-  margin-top: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 80px;
   color: #fff;
 }
 

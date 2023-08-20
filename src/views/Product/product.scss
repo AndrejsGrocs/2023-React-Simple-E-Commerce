@@ -1,59 +1,60 @@
-.product{
-    position: relative;
-    top: 10vh;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-gray-200);
-    height: 39vh;
-    width: 31%;
-    border-radius: 30px;
-  
-  
+.product {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gray-200);
+  height: 39vh;
+  width: 31%;
+  border-radius: 30px;
 }
 
-.product-img{
-    position: relative;
-    top: 3vh;
-    margin: 0 auto;
-    width: 9vw;
-    border-radius: 30px;
+.product-img {
+  position: relative;
+  top: 3vh;
+  margin: 0 auto;
+  width: 9vw;
+  border-radius: 30px;
 }
 
-.product-description{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
-    position: relative;
-    top: 5vh;
-    text-align: center;
-    margin: 0 auto;
+.product-description {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  position: relative;
+  top: 5vh;
+  text-align: center;
+  margin: 0 auto;
 }
-
-
-
 
 .add-to-cart-button {
-    position: relative;
-    top: 1vh;
+  position: relative;
+  top: 1vh;
   appearance: button;
-  background-color: var(--color-red-example);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
-  border: 1px solid var(--color-red-example);
+  background-color: var(--color-pink-example);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid var(--color-pink-example);
   border-radius: 1rem;
-  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
- font-family: 'Courier New', Courier, monospace;
- font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.5;
   margin: 0;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-transform: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -66,31 +67,30 @@
 }
 
 .add-to-cart-button:hover {
-  background-color: #e84f69;
-  border-color: #e84f69;
+  background-color: var(--color-neon-example1);
+  border-color: var(--color-neon-example1);
 }
 
 .add-to-cart-button:focus {
-  background-color: #413FC5;
-  border-color: #3E3BBA;
-  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+  background-color: var(--color-neon-example1);
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px;
 }
 
 .add-to-cart-button:active {
-  background-color: #3E3BBA;
+  background-color: #e1e1ff;
   background-image: none;
-  border-color: #3A38AE;
   box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
 }
 
 .add-to-cart-button:active:focus {
-  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset,
+    rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
 }
 
 .add-to-cart-button:disabled {
   background-image: none;
   box-shadow: none;
-  opacity: .65;
+  opacity: 0.65;
   pointer-events: none;
 }
-
