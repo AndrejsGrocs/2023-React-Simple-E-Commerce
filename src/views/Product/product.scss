@@ -15,6 +15,43 @@
   margin: 0 auto;
   width: 9vw;
   border-radius: 30px;
+  object-fit: cover;
+  transition: .2s linear;
+ 
+}
+
+.product-img:hover{
+  
+  cursor: pointer;
+  transform: scale(1.1);
+
+
+}
+
+.dialog{
+  position: fixed;
+  top: 200px;
+  height: 500px;
+  border-radius: 30px;
+  z-index: 4;
+
+}
+
+.popup-image{
+  position: relative;
+
+  height: 800px;
+  border-radius: 30px;
+  z-index: 4;
+}
+
+.close-icon{
+  position: absolute;
+  width: 30px;
+  top: 30px;
+  left: 730px;
+ 
+  z-index: 5;
 }
 
 .product-description {

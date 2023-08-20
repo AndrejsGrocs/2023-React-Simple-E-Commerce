@@ -3,8 +3,14 @@ import {PRODUCTS} from "../../products"
 import {Product1} from '../Product/Product'
 
 
+
 export default function Landing() {
+
+
     return (
+      <>
+
+
       
         
           <div>
@@ -23,11 +29,18 @@ export default function Landing() {
             </div>
 
           </div>
+
+
+
+          
         
           
            
         
           </div>
+
+
+          </>
 
       
 
