@@ -11,6 +11,7 @@ export default function Landing() {
             <div className='landing-body'>
             <h1 className='lp-h1'>STUDIO EQUIPMENT SHOP</h1>
             </div>
+            <div className="cards-section">
             <div className="cards-container">
          
               {PRODUCTS.map((product)=> 
@@ -18,6 +19,7 @@ export default function Landing() {
               <Product1 data={product}/>)}
             <div>
       
+            </div>
             </div>
 
           </div>

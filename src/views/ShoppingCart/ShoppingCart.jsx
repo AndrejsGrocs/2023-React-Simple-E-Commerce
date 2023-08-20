@@ -36,8 +36,8 @@ export default function Page1() {
             <div className="checkout">
               <p className="subtotal-text">Subtotal:  {totalAmount} EUR</p>
               <div className="button-container">
-              <button className="checkout-button" onClick={() => navigate("/")}>Continue Shopping</button>
-              <button className="checkout-button">Checkout</button>
+              <button className="add-to-cart-button" onClick={() => navigate("/")}>Continue Shopping</button>
+              <button className="add-to-cart-button">Checkout</button>
               </div>
             </div>
           ) : (
