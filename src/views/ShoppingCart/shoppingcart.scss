@@ -33,7 +33,6 @@
 
 .checkout-container {
   position: relative;
-
   margin: 0 auto;
   left: 40%;
 }
@@ -42,9 +41,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
   top: -100px;
-
   text-align: center;
   width: 20vw;
   height: 12vh;
@@ -82,14 +79,11 @@
   color: #ffffff;
 }
 
-.button-container{
-    position: relative;
-    top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    
-   
-    margin: 0 auto;
+.button-container {
+  position: relative;
+  top: -1vh;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
 }
-
