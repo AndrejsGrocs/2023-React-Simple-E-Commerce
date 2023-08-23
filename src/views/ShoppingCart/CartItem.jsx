@@ -10,13 +10,13 @@ export const CartItem = (props) => {
     <img className='cart-item-img' src={productImage}></img>
     <div className='description'>
     <p>{productName}</p>
-    <p>{price}</p>
+    <p><b>{price} EUR</b></p>
     <div className='count-handler'>
-    <button onClick={()=>removeFromCart(id)}>-</button>
+    <button className='cart-item-button' onClick={()=>removeFromCart(id)}>-</button>
     {/* //! cartItems[id] shows the amount of every product in every inputfield */}
     {/* //! (Number(e.target.value) converting string to number */}
     <input className='c_i_input' value={cartItems[id]} onChange={(e)=> updateCartItemCount(Number(e.target.value),id)}/>
-    <button  onClick={()=>addToCart(id)}>+</button>
+    <button className='cart-item-button'  onClick={()=>addToCart(id)}>+</button>
 
     </div>
 
