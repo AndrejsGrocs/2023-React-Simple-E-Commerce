@@ -1,20 +1,23 @@
 
 
-![My Image](react_logo.png)
+![My Image](ecommerce_project_cover_image.jpg)
 
-# Small React E Commerce Project
+# Small DJ/Studio Equipment E Commerce Project
+## Products/Shopping Cart
 
 
+### Project in progress.
+### Phase: Responsiveness design phase
 
-```
-Project in progress.
-Now is the design phase.
-Responsiveness is coming soon.
-
-The project is a template for the users to get this logic and put it inside your e-commerce app,
-to get the shopping cart functionality with the possibility to add/remove items and also to 
-see the total price of the cart.
 
 ```
+The project is a template for the E Commerce Project Developers.
+
+You can take this logic and put inside your e-commerce app.
+
+The functionalities of add/remove items and also to see the total price of the cart are implemented here.
+```
+
+
 
 ## Thanks and Good Luck!
