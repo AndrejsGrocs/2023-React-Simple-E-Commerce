@@ -32,12 +32,17 @@ export const Product1 = (props) => {
         )}
 
       <div className='product'>
+      
+      <div className='image-section'>
+      <img src={productImage}  className='product-img'  ></img>
+        
+        <div className='image-overlay' onClick={togglePopup}>
+        <p className='image-zoom-text'>CLICK TO ZOOM</p>
 
+        </div>
 
-
-
-
-        <img src={productImage} onClick={togglePopup} className='product-img'  ></img>
+      </div>
+   
         <div className='product-description'>
 
           <p>{productName}</p>
