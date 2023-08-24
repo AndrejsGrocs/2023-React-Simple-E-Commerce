@@ -6,31 +6,52 @@
 
 .cart-item {
   position: relative;
-  top: 10vh;
+  left: 5vw;
+  top: 5vh;
+  width: 30vw;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: var(--color-gray-200);
-  height: 300px;
-  width: 200px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.cart-item-image-section{
+  position: relative;
+  left: 1vw;
+  display: flex;
+  align-items: center;
+
+}
+
+.cart-item-img {
+  position: relative;
+  margin: 0 auto;
+  width: 4vw;
+  border-radius: 30px;
+}
+
 .description {
   position: relative;
-  top: 5vh;
-  width: 90%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.8rem;
   text-align: center;
 }
 
 .count-handler {
+  position: relative;
+  right: 1vw;
   display: flex;
   flex-direction: row;
-  margin-left: 20%;
-  margin-top: 2.1vh;
+  align-items: center;
+  
+
+
 
   gap: 10px;
 }
