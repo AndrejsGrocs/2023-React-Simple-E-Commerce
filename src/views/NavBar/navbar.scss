@@ -1,218 +1,239 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-.nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem;
-    background-color: #ffffff;
-    align-items: center;
-    color: rgb(70, 70, 70);
-    z-index: 2;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.nav-list{
-    background-color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  align-items: center;
+  color: rgb(70, 70, 70);
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
 
-
+.nav-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  list-style: none;
+  text-decoration: none;
+ 
+  gap: 12vw;
+  
 }
 
 li a {
-    position: relative;
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    color: #2a3d4f;
-    padding: 10px;
-    margin: 100px;
-    transition: 0.2s linear;
-    
+  position: relative;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #2a3d4f;
 
-  }
-
-li a:hover{
-    
-    opacity: 0.3;
-    transform: scale(1.05);
-   
-
-  }
-
-  .nav-logo-img{
-    width: 100px;
-
-   
-  }
-
-  .nav-logo-img:hover{
-    animation-name: rotate;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-  }
-
-  .nav-logo-img:after {
-    transform: rotate(-57deg);
-  }
   
-  .nav-logo-img:before {
-    transform: rotate(57deg);
-  }
-  
-  @keyframes rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .logo-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 15%;
-    background-color: #ffffff;
-  }
-
-
-
-  .sm-section{
-    position: relative;
-    right: 3vw;
-    
-    width: 15%;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
-  .sm-icon{
-    width: 30px;
-    margin: 20px;
-
-  }
-
-  .sm-logo-img{
-    
-    width: 50px;
-
-
-  }
-
-  .sm-logo-img:hover{
  
+  transition: 0.2s linear;
+}
 
-    -webkit-animation: rotate-in-ver 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: rotate-in-ver 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+li a:hover {
+  opacity: 0.3;
+  transform: scale(1.05);
+}
 
+.nav-logo-img {
+  position: relative;
+  left: 6vw;
+  width: 100px;
+}
+
+.nav-logo-img:hover {
+  animation-name: rotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.nav-logo-img:after {
+  transform: rotate(-57deg);
+}
+
+.nav-logo-img:before {
+  transform: rotate(57deg);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
+}
 
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 15%;
+  background-color: #ffffff;
+}
 
-  @-webkit-keyframes rotate-in-ver {
-    0% {
-      -webkit-transform: rotateY(-360deg);
-              transform: rotateY(-360deg);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-      opacity: 1;
-    }
+.sm-section {
+  position: relative;
+  right: 3vw;
+  gap: 3vw;
+  width: 15%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-icon {
+  width: 30px;
+ 
+}
+
+.sm-logo-img {
+  width: 42px;
+}
+
+.sm-logo-img:hover {
+  -webkit-animation: rotate-in-ver 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: rotate-in-ver 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 1;
   }
-  @keyframes rotate-in-ver {
-    0% {
-      -webkit-transform: rotateY(-360deg);
-              transform: rotateY(-360deg);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
   }
-  
+}
+@keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
 
-
-
-  /* Responsive section */
+/* Responsive section */
 
 /* Width Responsiveness */
 
 @media (max-width: 4000px) {
-
 }
 
-
 @media (max-width: 2000px) {
-
-
 }
 
 @media (max-width: 1700px) {
-
-
 }
 
 @media (max-width: 1400px) {
-
 }
 
 @media (max-width: 1200px) {
-
+  .sm-section{
+    right: 6vw;
+  }
+  .nav-list{
+    
+    right: 3vw;
+  }
 }
 
 @media (max-width: 1024px) {
-
 }
 
 @media (max-width: 960px) {
-
-
-
-
+  .sm-section{
+    right: 8vw;
+  }
 }
 
 @media (max-width: 768px) {
 
-
+  .sm-section{
+    right: 10vw;
+  }
+  .sm-logo-img{
+    width: 35px;
+  }
+  .nav-logo-img{
+    width: 80px;
+  }
+  li a{
+    font-size: 1.2rem;
+    
+  }
+  .nav-list{
+    gap: 5vw;
+  }
 }
 
 @media (max-width: 480px) {
 
+  .nav-list{
+    gap: 3vw;
+    right: 6vw;
+  }
 
+  .nav-logo-img{
+    width: 70px;
+  }
+
+  .sm-logo-img{
+    width: 30px;
+  }
 }
 
 @media (max-width: 400px) {
-
+  li a{
+    font-size: 1rem;
+    font-weight: 300;
+    
+  }
 }
 
 @media (max-width: 320px) {
 
+  .nav-list{
+    
+    right: 8vw;
+  }
 
+  .nav-logo-img{
+    width: 60px;
+  }
+
+  .sm-logo-img{
+    width: 25px;
+  }
 }
-
 
 
 
@@ -222,35 +243,25 @@ li a:hover{
 /* Height Responsiveness */
 
 @media (max-height: 2000px) {
-
 }
 
 @media (max-height: 800px) {
-
-
 }
 
 @media (max-height: 700px) {
-
 }
 
 @media (max-height: 600px) {
-
 }
 
 @media (max-height: 500px) {
-
-
 }
 
 @media (max-height: 450px) {
-
 }
 
 @media (max-height: 320px) {
-
 }
 
 @media (max-height: 250px) {
-
 }

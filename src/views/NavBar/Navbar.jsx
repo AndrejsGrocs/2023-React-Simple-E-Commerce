@@ -22,7 +22,8 @@ export default function Navbar() {
             <>
             
             <li><Link to='/' activeclassname='active' className='nav-link'>SHOP</Link></li>
-            <li><Link to='/shopping_cart' activeclassname='active' className='nav-link'><ShoppingCart size={32}/></Link></li>
+            <li><Link to='/shopping_cart' activeclassname='active' className='nav-link'>CART</Link></li>
+            {/* <li><Link to='/shopping_cart' activeclassname='active' className='nav-link'><ShoppingCart size={32}/></Link></li> */}
         
            
         
