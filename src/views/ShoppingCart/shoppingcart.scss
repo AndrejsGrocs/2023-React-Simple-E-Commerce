@@ -6,7 +6,7 @@
 
 .shopping-cart-body {
   background-color: var(--color-pink-example);
-  height: 98vh;
+  height: 105vh;
 }
 
 .sc-h1 {
@@ -21,10 +21,10 @@
   position: relative;
   top: 15vh;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   background-color: var(--color-gray-100);
-  width: 80%;
+  width: 75%;
   height: 70vh;
   margin: 0 auto;
   gap: 15px;
@@ -34,14 +34,18 @@
 .checkout-container {
   position: relative;
   margin: 0 auto;
-  left: 40%;
+ 
 }
 
 .checkout {
   position: relative;
+  top: 12.5vh;
+  margin: 0 auto;
+  border: 3px solid var(--color-gray-100);
+
   display: flex;
   flex-direction: column;
-  top: -100px;
+
   text-align: center;
   width: 20vw;
   height: 12vh;
@@ -50,13 +54,7 @@
   gap: 10px;
 }
 
-.cart-item-img {
-  position: relative;
-  top: 3vh;
-  margin: 0 auto;
-  width: 5vw;
-  border-radius: 30px;
-}
+
 
 .empty-cart-text {
   position: relative;
