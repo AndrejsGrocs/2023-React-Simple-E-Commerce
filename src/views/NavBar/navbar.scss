@@ -35,19 +35,52 @@
 }
 
 li a {
-    font-size: 1rem;
+    position: relative;
+    font-size: 1.5rem;
     text-decoration: none;
+    font-weight: 600;
     color: #2a3d4f;
     padding: 10px;
     margin: 100px;
+    transition: 0.2s linear;
+    
+
   }
 
+li a:hover{
+    
+    opacity: 0.3;
+    transform: scale(1.05);
+   
 
-
+  }
 
   .nav-logo-img{
     width: 100px;
+
    
+  }
+
+  .nav-logo-img:hover{
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+
+  .nav-logo-img:after {
+    transform: rotate(-57deg);
+  }
+  
+  .nav-logo-img:before {
+    transform: rotate(57deg);
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .logo-section {
@@ -58,7 +91,11 @@ li a {
     background-color: #ffffff;
   }
 
+
+
   .sm-section{
+    position: relative;
+    right: 3vw;
     
     width: 15%;
     background-color: #ffffff;
@@ -72,9 +109,148 @@ li a {
   .sm-icon{
     width: 30px;
     margin: 20px;
+
   }
 
   .sm-logo-img{
+    
     width: 50px;
 
+
   }
+
+  .sm-logo-img:hover{
+ 
+
+    -webkit-animation: rotate-in-ver 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-in-ver 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  }
+
+
+  @-webkit-keyframes rotate-in-ver {
+    0% {
+      -webkit-transform: rotateY(-360deg);
+              transform: rotateY(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-in-ver {
+    0% {
+      -webkit-transform: rotateY(-360deg);
+              transform: rotateY(-360deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+  /* Responsive section */
+
+/* Width Responsiveness */
+
+@media (max-width: 4000px) {
+
+}
+
+
+@media (max-width: 2000px) {
+
+
+}
+
+@media (max-width: 1700px) {
+
+
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 960px) {
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px) {
+
+
+}
+
+@media (max-width: 400px) {
+
+}
+
+@media (max-width: 320px) {
+
+
+}
+
+
+
+
+
+/* <------------------------------> */
+
+/* Height Responsiveness */
+
+@media (max-height: 2000px) {
+
+}
+
+@media (max-height: 800px) {
+
+
+}
+
+@media (max-height: 700px) {
+
+}
+
+@media (max-height: 600px) {
+
+}
+
+@media (max-height: 500px) {
+
+
+}
+
+@media (max-height: 450px) {
+
+}
+
+@media (max-height: 320px) {
+
+}
+
+@media (max-height: 250px) {
+
+}
