@@ -54,12 +54,17 @@
   gap: 10px;
 }
 
-
+.sc-h1{
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  
+}
 
 .empty-cart-text {
   position: relative;
+  display: flex;
+  justify-content: center;
   top: -50vh;
-  left: 50px;
   color: #fff;
   font-family: "Courier New", Courier, monospace;
   font-weight: 800;
