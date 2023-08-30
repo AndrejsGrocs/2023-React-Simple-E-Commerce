@@ -2,11 +2,13 @@
 
 ![My Image](ecommerce_project_cover_image.jpg)
 
+
+
 # Small DJ/Studio Equipment E Commerce Project
-## Products/Shopping Cart
+### Products/Shopping Cart
 
+# [RUN APP (Responsiveness in progress now)](https://musicandstudioshop-a604dde2b192.herokuapp.com/)
 
-### Project in progress.
 ### Phase: Responsiveness design phase
 
 
