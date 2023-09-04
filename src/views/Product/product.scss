@@ -113,7 +113,7 @@
 
 .card-button-container{
   position: relative;
-  top: 1vj;
+  top: 1vh;
 }
 
 .add-to-cart-button {
@@ -191,9 +191,15 @@
 /* Width Responsiveness */
 
 @media (max-width: 4000px) {
+  .card-button-container{
+    top: -2vh;
+  }
 }
 
 @media (max-width: 2000px) {
+  .card-button-container{
+   top: 1vh;
+  }
 }
 
 @media (max-width: 1700px) {
@@ -389,6 +395,10 @@
 
 @media (max-width: 320px) {
 
+  .card-button-container{
+    top: 1vh;
+  }
+
   .image-zoom-text{
     font-size: 0.4rem;
   }
@@ -396,6 +406,12 @@
   .close-icon{
     top: 10px;
     font-size: 18px;
+    
+  }
+
+  .add-to-cart-button{
+    font-size: 0.4rem;
+    padding: 0.5rem 0.4rem;
     
   }
 

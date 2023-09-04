@@ -55,7 +55,7 @@ export const Product1 = (props) => {
           <div className='card-button-container'>
           <button className='add-to-cart-button' onClick={() => addToCart(id)}>
             {/* //! Shows the amound of cartitems if cartitems > than 0 */}
-            Add To Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
+            Add To Cart{cartItemAmount > 0 && <>({cartItemAmount})</>}
           </button>
 
           </div>
