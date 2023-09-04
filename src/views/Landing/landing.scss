@@ -55,7 +55,9 @@
     width: 80%;
     height: 130vh;
     margin: 0 auto;
-    gap: 15px;
+   
+    grid-column-gap: 35px;
+   
     border-radius: 30px;
      
   }
@@ -97,8 +99,17 @@
 
 @media (max-width: 768px) {
 
+  .cards-section{
+    height: 190vh;
+  }
+
+
   .lp-h1{
     font-size: 1.7rem;
+  }
+
+  .cards-container{
+    height: 185vh;
   }
   
 
@@ -107,9 +118,18 @@
 
 @media (max-width: 480px) {
 
+  .cards-section{
+    height: 160vh;
+  }
+
   .lp-h1{
     font-size: 1.3rem;
   }
+  
+  .cards-container{
+    height: 150vh;
+  }
+
 
 
 }
@@ -122,6 +142,10 @@
 }
 
 @media (max-width: 320px) {
+
+  .lp-h1{
+    font-size: 0.7rem;
+  }
 
 
 }
