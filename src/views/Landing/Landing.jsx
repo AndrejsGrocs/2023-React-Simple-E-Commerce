@@ -15,7 +15,12 @@ export default function Landing() {
         
           <div>
             <div className='landing-body'>
+         
+
             <h1 className='lp-h1'>STUDIO EQUIPMENT SHOP</h1>
+            
+            
+            
             </div>
             <div className="cards-section">
             <div className="cards-container">
@@ -27,8 +32,14 @@ export default function Landing() {
       
             </div>
             </div>
+            
 
           </div>
+          <div>
+                        
+                        <p className="updated-data">Updated 03.11.2023</p>
+                          
+                        </div>
 
 
 

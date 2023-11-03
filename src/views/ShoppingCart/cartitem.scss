@@ -17,19 +17,18 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.cart-item-image-section{
+.cart-item-image-section {
   position: relative;
   left: 1vw;
   display: flex;
   align-items: center;
-
 }
 
 .cart-item-img {
   position: relative;
   margin: 0 auto;
   width: 4vw;
-  border-radius: 20px;
+  border-radius: 20%;
 }
 
 .description {
@@ -52,7 +51,6 @@
   flex-direction: row;
   align-items: center;
   gap: 0.5vw;
- 
 }
 
 .cart-item-button {
@@ -138,8 +136,6 @@
   background-color: var(--color-neon-example1);
 }
 
-
-
 /* Responsive section */
 
 /* Width Responsiveness */
@@ -151,22 +147,20 @@
 }
 
 @media (max-width: 2000px) {
-  .cart-item-img{
+  .cart-item-img {
     width: 4.5vw;
     border-radius: 20px;
   }
-
 }
 
 @media (max-width: 1700px) {
-  .cart-item-img{
+  .cart-item-img {
     width: 5vw;
     border-radius: 20px;
   }
 
-  .description{
+  .description {
     font-size: 0.8rem;
-    
   }
 }
 
@@ -174,62 +168,82 @@
 }
 
 @media (max-width: 1200px) {
-
-  .cart-item-img{
+  .cart-item-img {
     width: 5.5vw;
-    
   }
 
+  .description {
+    width: 15vw;
+  }
 }
 
 @media (max-width: 1024px) {
-
-
 }
 
 @media (max-width: 960px) {
-  .cart-item{
+  .cart-item {
     width: 50vw;
 
     margin: 0 auto;
     left: 0;
-    }
+  }
 
-    .cart-item-img{
-      width: 8vw;
-      
-    }
+  .cart-item-img {
+    width: 10vw;
+  }
 
-    .description{
-      padding: 1px;
-    }
-    
-    
-
+  .description {
+    padding: 1px;
+  }
 }
 
 @media (max-width: 768px) {
+  .cart-item-img {
+    width: 10vw;
+  }
 
-
+  .description {
+    width: 15vw;
+  }
 }
 
 @media (max-width: 480px) {
+  .count-handler {
+    justify-content: center;
+    top: 2.5vh;
+  }
 
+  .cart-item {
+    flex-direction: column;
 
+    height: 20vh;
+  }
+
+  .cart-item-img {
+    top: 1.5vh;
+    width: 20vw;
+  }
+
+  .description {
+    justify-content: center;
+    top: 2vh;
+    width: 30vw;
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 400px) {
+  .cart-item-img {
+    width: 27vw;
+  }
 
-
+  .count-handler {
+    top: 3.5vh;
+  }
 }
 
 @media (max-width: 320px) {
-
-
 }
-
-
-
 
 /* <------------------------------> */
 
@@ -258,4 +272,3 @@
 
 @media (max-height: 250px) {
 }
-
